@@ -1,0 +1,6 @@
+disp("hola, soy octave")
+name = input("Como te llamas ", "s")
+disp(["Hola ", name])
+pause(1)
+disp("Adios")
+pause(1)
