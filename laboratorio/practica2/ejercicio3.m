@@ -1,4 +1,3 @@
-
 x = input('Ingrese valor de X: ')
 funcion = 0
 residuo = mod(x, 4)
