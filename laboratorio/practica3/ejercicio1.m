@@ -1,25 +1,25 @@
-
-materiasAprobadasOrdinario = 0
-materiasAprobadas = 6
-materiasReprobadas = 0
-materias = 6
+aprobadas = 6
+reprobadas = 0
 recursar = 0
 
-for i = 1 : materias
-    materiasAprobadasOrdinario = input('Ingresa la calificacion del ordinario: ')
+for i = 1 : 6
+    x = input('Ingresa la calificacion del ordinario: ')
 
-    if materiasAprobadasOrdinario < 60
-        materiasReprobadas = materiasReprobadas + 1
-        materiasAprobadas = materiasAprobadas - 1
+    if x < 60
+        reprobadas++
+        aprobadas--
     endif
-
 endfor
 
-for i = 1 : materiasReprobadas
-    materiasReprobadasExtra = input('Ingresa la calificacion del Extraordinario: ')
+for i = 1 : reprobadas
+    x = input('Ingresa la calificacion del Extraordinario: ')
 
-    if materiasReprobadasExtra < 60
-        recursar = recursar + 1
-  0
+    if x < 60
+        reprobadas--
+        recursar++
+    endif
 endfor
+fprintf("Materias aprobadas en Ordinario: %d", aprobadas)
+fprintf("Materias aprobadas en extraordinario: %d", reprobadas)
+fprintf("Materias a recursar: %d", recursar)
 
