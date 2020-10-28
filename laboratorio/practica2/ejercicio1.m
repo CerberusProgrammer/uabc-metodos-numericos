@@ -8,3 +8,5 @@ if functionValue == valor
 else
     disp('El valor no satisface la funcion')
 endif
+
+fprintf("El promedio del grupo es %.2f\n", prom)
